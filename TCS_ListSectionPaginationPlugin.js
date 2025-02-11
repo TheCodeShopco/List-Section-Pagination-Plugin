@@ -14,7 +14,7 @@ function createNewListPage(paginationTarget) {
     return newListPage;
 };
 
-function moveItemsToNewListPage() {
+function createPagination() {
     let { paginationTarget, paginationMarker } = findListSection();
     let originalList = paginationTarget.querySelector('.user-items-list-simple');
     let pageItemLimit = Number(paginationMarker.attributes['data-items-per-page'].value);
@@ -88,4 +88,4 @@ function addPaginationButton(paginationTarget, paginationMarker) {
     checkForSectionButton(paginationTarget);
 }
 
-document.addEventListener('DOMContentLoaded', moveItemsToNewListPage);
+document.addEventListener('DOMContentLoaded', createPagination);
