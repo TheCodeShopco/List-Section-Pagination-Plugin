@@ -88,4 +88,4 @@ function addPaginationButton(paginationTarget, paginationMarker) {
     checkForSectionButton(paginationTarget);
 }
 
-moveItemsToNewListPage();
+document.addEventListener(DOMContentLoaded, moveItemsToNewListPage);
